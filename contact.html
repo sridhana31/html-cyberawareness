@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - CyberShield</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-section {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: #111;
+      padding: 30px;
+      border-radius: 10px;
+      border: 2px solid #00ff99;
+      box-shadow: 0 0 10px rgba(0, 255, 153, 0.3);
+    }
+
+    .contact-section h2 {
+      color: #00ff99;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      color: #fff;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      background-color: #222;
+      color: #00ff99;
+      font-family: inherit;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #00ff99;
+      outline: none;
+    }
+
+    .contact-form button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #00ff99;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #00e699;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+      color: #aaa;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="main-heading">CyberShield</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="threats.html">Threats</a>
+      <a href="tips.html">Tips</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Email: cybersecure@example.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: India</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CyberShield. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

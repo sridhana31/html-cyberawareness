@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resources - Cyber Awareness</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .resources-header {
+      text-align: center;
+      padding: 30px;
+      background: #0e0e0e;
+      border-bottom: 2px solid #00ff99;
+    }
+
+    .resources-header h2 {
+      font-size: 28px;
+      color: #00ff99;
+      margin-bottom: 10px;
+    }
+
+    .resource-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px auto;
+      max-width: 700px;
+    }
+
+    .resource-links a {
+      background: #111;
+      color: #00d9ff;
+      padding: 12px 20px;
+      margin: 10px;
+      border: 2px solid #00ff99;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .resource-links a:hover {
+      background: #00ff99;
+      color: #000;
+    }
+
+    /* Slider Styles */
+    .slider-container {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      overflow: hidden;
+      border: 2px solid #00ff99;
+      border-radius: 10px;
+    }
+
+    .slider-track {
+      display: flex;
+      width: calc(300px * 4);
+      animation: scrollSlider 20s linear infinite;
+    }
+
+    .slide {
+      flex: 0 0 300px;
+      margin: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @keyframes scrollSlider {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    footer {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cyber Awareness</h1>
+    
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="threats.html">Threats</a>
+      <a href="tips.html">Tips</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="resources-header">
+    <h2>Recommended Tools & Websites</h2>
+    <p>Stay informed and secure with these trusted cyber resources</p>
+  </div>
+
+  <div class="resource-links">
+    <a href="https://www.cyberaware.gov.in" target="_blank">Government Cyber Portal (India)</a>
+    <a href="https://haveibeenpwned.com" target="_blank">Check Data Breaches (HIBP)</a>
+    <a href="https://staysafeonline.org" target="_blank">StaySafeOnline.org</a>
+    <a href="https://www.cybersecurityhelp.cz" target="_blank">CyberSecurity Help</a>
+    <a href="https://www.us-cert.gov/ncas/tips" target="_blank">US-CERT Tips</a>
+  </div>
+
+  <!-- CSS Image Slider -->
+  <div class="slider-container">
+    <div class="slider-track">
+      <div class="slide">
+        <img src="cyber1.jpg" alt="Cyber Tip 1">
+      </div>
+      <div class="slide">
+        <img src="cyber2.png" alt="Cyber Tip 2">
+      </div>
+      <div class="slide">
+        <img src="cyber3.png" alt="Cyber Tip 3">
+      </div>
+      <div class="slide">
+        <img src="cyber4.png" alt="Cyber Tip 4">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Cyber Awareness. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
